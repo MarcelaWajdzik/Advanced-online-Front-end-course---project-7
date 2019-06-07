@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+button {
+
+    position: fixed;
+    width: 240px;
+    top: 10vh;
+    left: calc(50% - 120px);
+    font-size: 40px;
+    background-color: white;
+    color: black;
+    padding: 14px;
+    transition: 0.4;
+    border-color: black;
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transition: 3s;
+
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+button:hover+.square {
+
+    width: 100px;
+    height: 100px;
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+}
